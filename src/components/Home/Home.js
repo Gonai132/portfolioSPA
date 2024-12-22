@@ -11,15 +11,15 @@ const Home = () => {
         <h1 className='home-title'>
           <Typewriter
             options={{
-              strings: ['Front-end developer', 'Margaret S.', 'Interaktywne i responsywne SPA', 'Projektowanie UI/UX'],
+              strings: ['Front-end developer', 'Margaret S.', 'Interaktywne SPA', 'Projektowanie UI/UX'],
               autoStart: true,
               loop: true,
             }}
           />
         </h1>
-        <p>Cześć! Mam na imię Margaret i jestem front-end developerem, którego pasją jest tworzenie nowoczesnych, responsywnych stron internetowych i aplikacji SPA. Specjalizuję się w budowaniu intuicyjnych interfejsów użytkownika, które są nie tylko estetyczne, ale i funkcjonalne.</p>
+        <p className='col-xl-5 col-lg-5 col-mid-5 col-sm-7 col-8'>Cześć! Mam na imię Margaret i jestem front-end developerem, którego pasją jest tworzenie nowoczesnych, responsywnych stron internetowych i aplikacji SPA. Specjalizuję się w budowaniu intuicyjnych interfejsów użytkownika, które są nie tylko estetyczne, ale i funkcjonalne.</p>
         <span
-          className='home-button'
+          className='home-button col-xl-4 col-lg-4 col-mid-4 col-sm-6 col-8'
           onMouseEnter={() => setIsHovered(true)}  // Ustawiamy stan na true, gdy myszka wejdzie na przycisk
           onMouseLeave={() => setIsHovered(false)} // Ustawiamy stan na false, gdy myszka opuści przycisk
         >
