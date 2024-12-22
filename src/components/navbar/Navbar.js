@@ -11,10 +11,11 @@ return(
     <nav className="navbar-main">
         <ul>
             <li className="nav-item"><FontAwesomeIcon icon={faArrowUp} /></li>
+            <li className="nav-item"> </li>
             <li className="nav-item">O mnie</li>
             <li className="nav-item">Galeria</li>
             <li className="nav-item">Motto</li>
-            <li className="nav-item">Pakiet</li>
+            <li className="nav-item">Pakiety</li>
             <li className="nav-item">Kontakt</li>
         </ul>
     </nav>
