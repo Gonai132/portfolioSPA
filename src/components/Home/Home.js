@@ -17,7 +17,7 @@ const Home = () => {
             }}
           />
         </h1>
-        <p className='col-xl-5 col-lg-5 col-mid-5 col-sm-7 col-8'>Cześć! Mam na imię Margaret i jestem front-end developerem, którego pasją jest tworzenie nowoczesnych, responsywnych stron internetowych i aplikacji SPA. Specjalizuję się w budowaniu intuicyjnych interfejsów użytkownika, które są nie tylko estetyczne, ale i funkcjonalne.</p>
+        <p className='col-xl-5 col-lg-5 col-mid-5 col-sm-7 col-8'>Cześć! Mam na imię Margaret i jestem Front-End Developerem, którego pasją jest tworzenie nowoczesnych, responsywnych stron internetowych i aplikacji SPA. Specjalizuję się w budowaniu intuicyjnych interfejsów użytkownika..</p>
         <span
           className='home-button col-xl-4 col-lg-4 col-mid-4 col-sm-6 col-8'
           onMouseEnter={() => setIsHovered(true)}  // Ustawiamy stan na true, gdy myszka wejdzie na przycisk
