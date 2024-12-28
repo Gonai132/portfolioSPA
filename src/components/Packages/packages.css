@@ -1,0 +1,110 @@
+.packages-section {
+    min-height: 300px;
+}
+
+.section-title h2 {
+    text-align: center;
+}
+
+.packages-underline {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 5px auto;
+    margin-bottom: 10px;
+    background-color: bisque;
+}
+
+.packages {
+    display: flex;
+    flex-direction: column; 
+    height: 95%; 
+    margin: 10px;
+    margin-top: 50px;
+    padding: 15px;
+    -moz-box-shadow: 9px 9px 9px -2px rgba(230, 224, 224, 0.8);
+    -webkit-box-shadow: 9px 9px 9px -2px rgba(230, 224, 224, 0.8);
+    box-shadow: 9px 9px 9px -2px rgba(230, 224, 224, 0.8);
+    cursor: pointer;
+    border: 1px solid bisque;
+    transition-duration: 0.3s;
+}
+
+
+.packages:hover {
+    -moz-box-shadow: -6px 11px 5px -3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: -6px 11px 5px -3px rgba(0, 0, 0, 0.4);
+    box-shadow: -6px 11px 5px -3px rgba(0, 0, 0, 0.4);
+    border-left: solid 3px #00b4d8;  
+}
+
+.list-packages {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+}
+
+.list-packages h5, h6 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.list-packages p {
+    flex-shrink: 0;  
+}
+
+.list-packages p:last-child {
+    margin-top: auto;  
+    text-align: center;
+    color: #00b4d8; 
+    font-weight: bold;
+}
+
+.list-packages div {
+    align-self: center;
+    margin: 15px;
+}
+
+.load-button {
+    width: 20%;
+    min-width: 200px;
+    max-height: 50px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 3px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(255,255,255,0.15);
+    justify-content: center;
+    justify-self: center;
+    display: table;
+    margin: 50px auto;
+    transition: 0.3s;
+}
+
+.more {
+    color:#007cb6;
+    background-color: bisque;
+}
+
+.more:hover {
+    color:#005379;
+    background-color: #caf0f8;
+   
+}
+
+.less {
+    color:#005379;
+    background-color: #caf0f8;
+   
+}
+
+.less:hover {
+    color:#007cb6;
+    background-color: bisque;
+}
+
