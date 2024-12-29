@@ -116,7 +116,7 @@ const Packages = () => {
     }
 
   return (
-    <div className='container packages-section'>
+    <div className='container packages-section'id='packages'>
         <div className='section-title'>
             <h2>Pakiety</h2>
             <span className='line'></span>

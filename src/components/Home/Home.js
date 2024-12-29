@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className={`container-fluid home ${isHovered ? 'scale-small' : ''}`}>
+    <div className={`container-fluid home ${isHovered ? 'scale-small' : ''}`} id='home'>
       <div className='container home-content'>
         <h1 className='home-title'>
           <Typewriter

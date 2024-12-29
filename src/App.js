@@ -1,9 +1,10 @@
 import React from "react";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Packages from "./components/Packages/Packages";
 import ScrollToTop from "react-scroll-to-top";
+import "./app.css";
 
 const App = () => {
   return (
