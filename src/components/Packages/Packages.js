@@ -3,6 +3,12 @@ import "./packages.css";
 import { FaDiceOne, FaDiceTwo, FaDiceThree, FaDiceFour, FaDiceFive,FaDiceSix} from "react-icons/fa";
 import { MdExpandMore, MdExpandLess } from "react-icons/md";
 import girl from "../../img/about/girl.jpg";
+import package1 from "../../img/packages/package1.jpg";
+import package2 from "../../img/packages/package2.jpg"
+import package3 from "../../img/packages/package3.jpg"
+import package4 from "../../img/packages/package4.jpg"
+import package5 from "../../img/packages/package5.jpg"
+import package6 from "../../img/packages/package6.jpg"
 
 const Packages = () => {
 
@@ -21,7 +27,7 @@ const Packages = () => {
                 `,
             price: "1 500 - 2 500 PLN",
             dice: <FaDiceOne size={"30px"} style={{color: "orange"}}/>,
-            image: [<img src={girl} height="200px" width="200px" alt='about_image'/>],
+            image: [<img src={package1} height="200px" width="200px" alt='about_image'/>],
 
         },
         {
@@ -39,7 +45,7 @@ const Packages = () => {
                 `,
             price: "2 500 - 4 000 PLN",
             dice: <FaDiceTwo size={"30px"} style={{color: "orange"}}/>,
-            image: [<img src={girl} height="200px" width="200px" alt='about_image'/>],
+            image: [<img src={package2} height="200px" width="200px" alt='about_image'/>],
         },
         {
             id:3,
@@ -51,7 +57,7 @@ const Packages = () => {
                 `,
             price: "4 500 - 5 500 PLN",
             dice: <FaDiceThree size={"30px"} style={{color: "orange"}}/>,
-            image: [<img src={girl} height="200px" width="200px" alt='about_image'/>],
+            image: [<img src={package3} height="200px" width="200px" alt='about_image'/>],
         },
         {
             id:4,
@@ -68,7 +74,7 @@ const Packages = () => {
                 `,
             price: "6 000 - 10 000 PLN",
             dice: <FaDiceFour size={"30px"} style={{color: "orange"}}/>,
-            image: [<img src={girl} height="200px" width="200px" alt='about_image'/>],
+            image: [<img src={package4} height="200px" width="200px" alt='about_image'/>],
         },
         {
             id:5,
@@ -80,7 +86,7 @@ const Packages = () => {
                 `,
             price: "10 000 - 12 000 PLN ",
             dice: <FaDiceFive size={"30px"} style={{color: "orange"}}/>,
-            image: [<img src={girl} height="200px" width="200px" alt='about_image'/>],
+            image: [<img src={package5} height="200px" width="200px" alt='about_image'/>],
         },
         {
             id:6,
@@ -95,7 +101,7 @@ const Packages = () => {
                 `,
             price: "12 000 - 15 000 PLN plus 2-5 tyś. pln miesięcznie za obsługę",
             dice: <FaDiceSix  size={"30px"} style={{color: "orange"}}/>,
-            image: [<img src={girl} height="200px" width="200px" alt='about_image'/>],
+            image: [<img src={package6} height="200px" width="200px" alt='about_image'/>],
         },
     ]
 

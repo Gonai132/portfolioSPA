@@ -27,15 +27,25 @@
     box-shadow: 9px 9px 9px -2px rgba(230, 224, 224, 0.8);
     cursor: pointer;
     border: 1px solid bisque;
-    transition-duration: 0.3s;
+    position: relative; 
+    transition-duration: 0.5s;
 }
 
+.packages:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5px;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(to top, #caf0f8, #00b4d8, #caf0f8);
+    transform: scaleY(0);
+    transition: transform 400ms ease-in-out;
+    transform-origin: center;
+}
 
-.packages:hover {
-    -moz-box-shadow: -6px 11px 5px -3px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: -6px 11px 5px -3px rgba(0, 0, 0, 0.4);
-    box-shadow: -6px 11px 5px -3px rgba(0, 0, 0, 0.4);
-    border-left: solid 3px #00b4d8;  
+.packages:hover:after {
+    transform: scaleY(1);
 }
 
 .list-packages {
