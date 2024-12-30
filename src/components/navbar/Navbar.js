@@ -24,11 +24,11 @@ return(
             <li className="nav-item home-nav">
             <Link to="home" spy={true} smooth={true} offset={-50} duration={100} activeClass="active-nav"><FontAwesomeIcon icon={faHome} /></Link></li>
             <li className="nav-item gap"> </li>
-            <li className="nav-item"><Link to="about" spy={true} smooth={true} offset={-20} duration={100} activeClass="active-nav">O mnie</Link></li>
-            <li className="nav-item"> <Link to="about" spy={true} smooth={true} offset={-20} duration={100}>Galeria</Link></li>
-            <li className="nav-item"> <Link to="about" spy={true} smooth={true} offset={-20} duration={100}>Motto</Link></li>
-            <li className="nav-item"> <Link to="packages" spy={true} smooth={true} offset={-20} duration={50} activeClass="active-nav">Pakiety</Link></li>
-            <li className="nav-item"> <Link to="about" spy={true} smooth={true} offset={-20} duration={100}>Kontakt</Link></li>
+            <li className="nav-item"><Link to="about" spy={true} smooth={true} offset={-30} duration={100} activeClass="active-nav">O mnie</Link></li>
+            <li className="nav-item"> <Link to="gallery" spy={true} smooth={true} offset={-30} duration={100} activeClass="active-nav">Galeria</Link></li>
+            <li className="nav-item"> <Link to="faq" spy={true} smooth={true} offset={-30} duration={100}>FAQ</Link></li>
+            <li className="nav-item"> <Link to="packages" spy={true} smooth={true} offset={-30} duration={50} activeClass="active-nav">Pakiety</Link></li>
+            <li className="nav-item"> <Link to="about" spy={true} smooth={true} offset={-30} duration={100}>Kontakt</Link></li>
   </ul>
     </nav>
 );

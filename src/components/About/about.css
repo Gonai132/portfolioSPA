@@ -1,9 +1,11 @@
 .about-section {
-    min-height: 700px;
+    min-height: 550px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 .about-image {
-    min-height: 700px;
+    min-height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;   
@@ -22,7 +24,6 @@
 }
 
 .about-details {
-    margin-top: 100px;
     text-align: left;
     padding: 20px;
 }

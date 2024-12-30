@@ -141,13 +141,13 @@ const Packages = () => {
 
             {showMore >= packagesdata.length ? null : (
                 <span className='load-button more' onClick={loadMore}>
-                Pokaż więcej <MdExpandMore size={"40px"} />
+                Pokaż więcej <MdExpandMore size={"25px"} />
                 </span>
             )} 
 
             {showMore > 3 && (
                     <span className='load-button less' onClick={loadLess}>
-                        <MdExpandLess size={"40px"}/> Pokaż mniej 
+                        <MdExpandLess size={"25px"}/> Pokaż mniej 
                     </span>
             )}
         

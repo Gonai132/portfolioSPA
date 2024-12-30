@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./home.css"
 import Typewriter from 'typewriter-effect';
+import {Link} from 'react-scroll';
 
 
 const Home = () => {
@@ -22,8 +23,7 @@ const Home = () => {
           className='home-button col-xl-4 col-lg-4 col-mid-4 col-sm-6 col-8'
           onMouseEnter={() => setIsHovered(true)}  // Ustawiamy stan na true, gdy myszka wejdzie na przycisk
           onMouseLeave={() => setIsHovered(false)} // Ustawiamy stan na false, gdy myszka opuści przycisk
-        >
-          Zobacz więcej
+        ><Link to="about" spy={true} smooth={true} offset={-20} duration={100} activeClass="active-nav">Zobacz więcej</Link>
         </span>
       </div>
     </div>

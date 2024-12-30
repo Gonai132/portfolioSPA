@@ -1,0 +1,30 @@
+.content-slider {
+    overflow: hidden;
+    margin: auto;
+    cursor: pointer;
+}
+
+img.image-slider {
+    background-position: center;
+}
+
+.gallery-slider {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-prev:before{
+    font-size: 24px!important;
+    color: #0082b6!important;
+}
+
+.slick-next:before{
+    font-size: 24px!important;
+    color: #0082b6!important;
+}
+
+.slick-disable {
+    opacity: 0;
+    pointer-events: none;
+}
