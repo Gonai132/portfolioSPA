@@ -27,3 +27,16 @@
   background-color: #074e6c;
   color: aliceblue;
 }
+
+.scroll-to-top {
+  width: 35px;
+  height: 35px;
+  right: 15px;
+  bottom: 60px;
+  opacity: 0.7;
+  transition: 0.3;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+}

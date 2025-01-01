@@ -32,7 +32,7 @@ const toggleTheme = () =>{
       <Packages/>
       </div>
       <Footer/>
-      <ScrollToTop smooth height="20" width="20" color="#007cb6" style={{borderRadius: "50%", backgroundColor: "#caf0f8", lineHeight: "30px"}}/>
+      <ScrollToTop smooth height="20" width="20" color="#0082b6" style={{borderRadius: "5px", backgroundColor: "#caf0f8", lineHeight: "30px"}}/>
     </ThemeContext.Provider>
   );
 }
