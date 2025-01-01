@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import "./packages.css";
 import { FaDiceOne, FaDiceTwo, FaDiceThree, FaDiceFour, FaDiceFive,FaDiceSix} from "react-icons/fa";
 import { MdExpandMore, MdExpandLess } from "react-icons/md";
-import girl from "../../img/about/girl.jpg";
 import package1 from "../../img/packages/package1.jpg";
 import package2 from "../../img/packages/package2.jpg"
 import package3 from "../../img/packages/package3.jpg"
 import package4 from "../../img/packages/package4.jpg"
 import package5 from "../../img/packages/package5.jpg"
 import package6 from "../../img/packages/package6.jpg"
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
 
 const Packages = () => {
 
@@ -117,11 +119,14 @@ const Packages = () => {
 
   return (
     <div className='container packages-section'id='packages'>
+        <Fade top>
         <div className='section-title'>
             <h2>Pakiety</h2>
             <span className='line'></span>
         </div>
+        </Fade>
         <div className='row packages-row'> 
+        <Zoom>
             {packagesdata.slice(0,showMore).map((item,index)=>(
                 <div className='wrap col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12'>
                     <div className='packages' key={index}>
@@ -138,20 +143,25 @@ const Packages = () => {
                     </div>
                 </div>
             ))}
-
+        </Zoom>
+       
             {showMore >= packagesdata.length ? null : (
+                <Bounce>
                 <span className='load-button more' onClick={loadMore}>
                 Pokaż więcej <MdExpandMore size={"25px"} />
-                </span>
+                </span></Bounce>
             )} 
 
             {showMore > 3 && (
+                 <Bounce>
                     <span className='load-button less' onClick={loadLess}>
                         <MdExpandLess size={"25px"}/> Pokaż mniej 
-                    </span>
+                    </span></Bounce>
             )}
+      
         
         </div>
+        
     </div>
   )
 }

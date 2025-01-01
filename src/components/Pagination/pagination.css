@@ -1,0 +1,120 @@
+.pagination {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #666;
+    margin: 10px;
+    font-weight: 700;
+}
+
+.pagination a {
+    text-decoration: none;
+    list-style: none;
+    color: #666;
+}
+
+.pagination__link--active {
+    border: 1px solid white;
+    padding: 10px;
+    background-color: #00b4d8;
+}
+
+.pagination__link--active a {
+    color: white;
+}
+
+.pagination-design {
+    display: flex;
+    list-style-type: none;
+    margin: 5px;
+    padding: 7px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.break-class {
+    display: flex;
+    list-style-type: none;
+    margin: 5px;
+    padding: 7px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid  #666;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.break-class:hover {
+    background-color: #666;
+    color: white;
+}
+
+.pagination-design a{
+    transition-duration: 0.3s;
+}
+
+.pagination-design a:hover {
+    display: flex;
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #111;
+}
+
+.previous-button,  .next-button {
+    text-transform: uppercase;
+    font-size: small;
+    display: flex;
+    list-style-type: none;
+    margin: 5px;
+    padding: 7px 10px;
+    min-height: 30px;
+    min-width: 90px;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #aaa;
+    transition-duration: 0.3s;
+}
+
+.pagination__link--disabled {
+    display: none;
+}
+
+.previous-button:hover,  .next-button:hover {
+    background-color: #aaa;
+}
+
+.previous-button:hover a,  .next-button:hover a {
+    color: white;
+}
+
+.pagination__link--active:hover {
+    background-color:#666;
+    color: white;
+}
+
+.pagination__link--active:hover a {
+    color: white;
+}

@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import "./home.css"
 import Typewriter from 'typewriter-effect';
 import {Link} from 'react-scroll';
+import Fade from "react-reveal/Fade";
 
 
 const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div className={`container-fluid home ${isHovered ? 'scale-small' : ''}`} id='home'>
+      <Fade left>
       <div className='container home-content'>
         <h1 className='home-title'>
           <Typewriter
@@ -26,6 +28,7 @@ const Home = () => {
         ><Link to="about" spy={true} smooth={true} offset={-20} duration={100} activeClass="active-nav">Zobacz więcej</Link>
         </span>
       </div>
+      </Fade>
     </div>
   );
 }

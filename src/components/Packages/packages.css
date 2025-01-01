@@ -5,6 +5,7 @@
 }
 
 .section-title h2 {
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -100,7 +101,7 @@
 }
 
 .more {
-    color:#007cb6;
+    color: #303841;
     background-color: bisque;
 }
 
@@ -117,7 +118,7 @@
 }
 
 .less:hover {
-    color:#007cb6;
+    color:#303841;
     background-color: bisque;
 }
 

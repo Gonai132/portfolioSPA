@@ -7,6 +7,9 @@ import web4 from '../../img/gallery/web4.jpeg';
 import web5 from '../../img/gallery/web5.jpeg';
 import web6 from '../../img/gallery/web6.jpeg';
 import MySlider from '../MySlider/MySlider';
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
+
 
 const Gallery = () => {
 
@@ -51,17 +54,24 @@ const Gallery = () => {
 
   return (
     <div className='container gallery-section' id='gallery'>
+        <Fade top>
        <div className='section-title'>
             <h2>Galeria</h2>
             <span className='line'></span>
         </div>
+        </Fade>
+        <Zoom>
         <MySlider/>
+        </Zoom>
+        <Fade bottom>
         <div className='center-slider-text'>
             <div className='about-text col-xl-9 col-lg-10 col-md-10 col-sm-12 col-12 slider-text'>
                 <h6>Powyżej znajduje się galeria projektów stron internetowych wygenerowanych przez narzędzie AI - Freepick, na potrzeby tego projektu studenckiego, gdyż sama nie mam ich jeszcze wiele we własnym portfolio. Poniżej wszystkie stony z galerii wraz z krótkimi opisami.
                 </h6>
             </div>
         </div>
+        </Fade>
+        <Zoom>
         <div className='row'>
             {data.map((item, index)=>(
                 <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12'>
@@ -79,7 +89,7 @@ const Gallery = () => {
             ))}
 
         </div>
-        
+        </Zoom>
     </div>
   )
 };

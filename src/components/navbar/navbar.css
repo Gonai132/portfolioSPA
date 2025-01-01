@@ -74,7 +74,24 @@
     height: 50px;
   }
 
-  .nav-item a.active-nav {
+.nav-item a.active-nav {
     transition: 0.3s;
     color:#333;
   }
+
+@media (max-width: 899px) {
+    .navbar-main {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1240px) {
+    .nav-item{
+        flex-basis: 18%;
+    }
+
+    .gap {
+        flex-basis: 5%;
+    }
+}

@@ -3,16 +3,20 @@ import "./about.css"
 import girl from "../../img/about/girl.jpg"
 import { FaReact } from "react-icons/fa";
 import { FcReading, FcSmartphoneTablet } from "react-icons/fc";
+import Fade from "react-reveal/Fade";
 
 const About = () => {
   return (
     <div className='container about-section' id='about'>
         <div className='row'>
+            <Fade left>
             <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12'>
                 <div className='about-image'>
                     <img src={girl} height="400px" width="400px" alt='about_image'/>
                 </div>
             </div>
+            </Fade>
+            <Fade right>
             <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12'>
                 <div className='about-details'>
                     <div className='about-title'>
@@ -55,9 +59,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            </Fade>
         </div>
-
-
     </div>
   )
 }
