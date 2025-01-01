@@ -35,6 +35,20 @@
     transition-duration: 0.5s;
 }
 
+#dark .packages {
+    -moz-box-shadow: 9px 9px 9px -2px rgba(18, 18, 18, 0.5);
+    -webkit-box-shadow: 9px 9px 9px -2px rgba(18, 18, 18, 0.5);
+    box-shadow: 9px 9px 9px -2px rgba(18, 18, 18, 0.5);
+    border: 1px solid rgba(173, 216, 230, 0.232);
+}
+
+#dark .packages:hover {
+    -moz-box-shadow: -6px 11px 5px -3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: -6px 11px 5px -3px rgba(0, 0, 0, 0.4);
+    box-shadow: -6px 11px 5px -3px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.3s;
+}
+
 .packages:after {
     content: "";
     position: absolute;
@@ -47,6 +61,10 @@
     transition: transform 400ms ease-in-out;
     transform-origin: center;
     border-radius: 50% 0 0 50%;
+}
+
+#dark .packages:after {
+    background: linear-gradient(to top, #015b6d, #00b4d8, #015b6d);
 }
 
 .packages:hover:after {
@@ -105,6 +123,14 @@
     background-color: bisque;
 }
 
+#dark .more {
+    background-color: orange;
+}
+
+#dark .more:hover {
+    background-color: #00b4d8;
+}
+
 .more:hover {
     color:#005379;
     background-color: #caf0f8;
@@ -117,8 +143,15 @@
    
 }
 
+#dark .less {
+    background-color: #00b4d8;
+}
+
 .less:hover {
     color:#303841;
     background-color: bisque;
 }
 
+#dark .less:hover {
+    background-color: orange;
+}

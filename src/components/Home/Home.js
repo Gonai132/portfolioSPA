@@ -3,12 +3,16 @@ import "./home.css"
 import Typewriter from 'typewriter-effect';
 import {Link} from 'react-scroll';
 import Fade from "react-reveal/Fade";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 
-const Home = () => {
+const Home = ({theme,toggleTheme}) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div className={`container-fluid home ${isHovered ? 'scale-small' : ''}`} id='home'>
+      <div className='theme-change' onClick={()=>toggleTheme()}> 
+        {theme === "light" ?(<p><MdDarkMode size={25}/></p>):(<p><MdLightMode size={25}/></p>)}
+      </div>
       <Fade left>
       <div className='container home-content'>
         <h1 className='home-title'>

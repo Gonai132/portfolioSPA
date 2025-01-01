@@ -8,6 +8,14 @@
     font-weight: 700;
 }
 
+#dark .pagination,  #dark .pagination a {
+    color: aliceblue;
+}
+
+#dark .pagination:hover,  #dark .pagination a:hover  {
+    color:#aaa;
+}
+
 .pagination a {
     text-decoration: none;
     list-style: none;
@@ -54,6 +62,11 @@
     text-decoration: none;
     cursor: pointer;
     transition-duration: 0.3s;
+}
+
+#dark .break-class {
+    color: aliceblue;
+    border: 1px solid  aliceblue;
 }
 
 .break-class:hover {
@@ -108,6 +121,10 @@
 
 .previous-button:hover a,  .next-button:hover a {
     color: white;
+}
+
+#dark .previous-button:hover, #dark .next-button:hover {
+    background-color: #666;
 }
 
 .pagination__link--active:hover {

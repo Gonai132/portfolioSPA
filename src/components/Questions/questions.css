@@ -19,6 +19,13 @@
     transition-duration: 0.3s;
     overflow: hidden;
     border: 1px solid rgba(173, 216, 230, 0.232);
+    border-radius: 5px;
+}
+
+#dark .post-card {
+    -moz-box-shadow: 9px 9px 9px -2px rgba(18, 18, 18, 0.5);
+    -webkit-box-shadow: 9px 9px 9px -2px rgba(18, 18, 18, 0.5);
+    box-shadow: 9px 9px 9px -2px rgba(18, 18, 18, 0.5);
 }
 
 
@@ -59,3 +66,9 @@
     transition-duration: 0.3s;
 }
 
+#dark .post-card:hover {
+    -moz-box-shadow: -6px 11px 5px -3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: -6px 11px 5px -3px rgba(0, 0, 0, 0.4);
+    box-shadow: -6px 11px 5px -3px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.3s;
+}

@@ -24,15 +24,15 @@ const toggleTheme = () =>{
     <ThemeContext.Provider value={{theme,toggleTheme}}>
       <Navbar/>
       <NavbarMobile/>
-      <Home/>
       <div className="main-theme" id={theme}>
+      <Home theme={theme} toggleTheme={toggleTheme}/>
       <About/>
       <Gallery/>
       <Questions/>
       <Packages/>
       </div>
       <Footer/>
-      <ScrollToTop smooth height="25" width="25" color="#007cb6" style={{borderRadius: "50%", backgroundColor: "#caf0f8", lineHeight: "30px"}}/>
+      <ScrollToTop smooth height="20" width="20" color="#007cb6" style={{borderRadius: "50%", backgroundColor: "#caf0f8", lineHeight: "30px"}}/>
     </ThemeContext.Provider>
   );
 }
