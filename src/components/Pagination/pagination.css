@@ -6,6 +6,7 @@
     color:  #666;
     margin: 10px;
     font-weight: 700;
+    flex-wrap: wrap;
 }
 
 #dark .pagination,  #dark .pagination a {

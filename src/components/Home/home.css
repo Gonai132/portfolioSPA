@@ -122,3 +122,11 @@ h1.home-title {
 .theme-change p {
     color: aliceblue;
 }
+
+@media (max-width: 899px) {
+    .theme-change {
+        top: 7px;
+        background-color: #ffffff00;
+        opacity: 0.8;
+    }
+}

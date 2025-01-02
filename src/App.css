@@ -40,3 +40,16 @@
 .scroll-to-top:hover {
   opacity: 1;
 }
+
+@media (max-width: 899px) {
+  
+  .gallery-section {overflow: hidden;}
+
+
+  .scroll-to-top {
+    bottom: 15px;
+    opacity: 0.7;
+  }  
+}
+
+/* H4F48ZV7HKN358SAND1JPTLN */

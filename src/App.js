@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Gallery from "./components/Gallery/Gallery";
 import Questions from "./components/Questions/Questions";
 import Packages from "./components/Packages/Packages";
+import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "react-scroll-to-top";
 import "./app.css";
@@ -30,6 +31,7 @@ const toggleTheme = () =>{
       <Gallery/>
       <Questions/>
       <Packages/>
+      <Contact/>
       </div>
       <Footer/>
       <ScrollToTop smooth height="20" width="20" color="#0082b6" style={{borderRadius: "5px", backgroundColor: "#caf0f8", lineHeight: "30px"}}/>
