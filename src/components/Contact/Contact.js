@@ -53,16 +53,16 @@ const Contact = () => {
                     <span className='line'></span>
                 </div>
                 </Fade>
-        <div className='row'>
+        <div className='row center-contact'>
         <Fade left>
-            <div className='col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12'>
+            <div className='col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12'>
                 <div className='image-class'>
                     <img src={contact}/>
                 </div>
             </div>
             </Fade>
             <Fade right>
-            <div className='col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12'>
+            <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12'>
                <div className='contact-form-design'>
                 <div className='text-center'>
                     <h5><TbMessageFilled size={25}/> Skontaktuj się ze mną</h5>

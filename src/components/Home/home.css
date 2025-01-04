@@ -123,10 +123,18 @@ h1.home-title {
     color: aliceblue;
 }
 
-@media (max-width: 899px) {
+@media (max-width: 767px) {
+    .home { 
+        color: #333;
+    }
+
     .theme-change {
         top: 7px;
         background-color: #ffffff00;
         opacity: 0.8;
+    }
+
+    .home:before {
+        background-position: 58%;
     }
 }

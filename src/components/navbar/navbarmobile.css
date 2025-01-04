@@ -24,14 +24,14 @@
     opacity: 1;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
 .responsive-mobile-view {
         display: none;
     }
 
 }
 
-@media (max-width: 899px) {
+@media (max-width: 767px) {
 
 .responsive-mobile-view {
         width: 100%;
