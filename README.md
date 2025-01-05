@@ -15,11 +15,11 @@ Nad tym projektem SPA pracowałam bardzo długo, poświecając na niego wiele dn
 ### Architektura frameworka React w mojej aplikacji SPA
 Moja aplikacja jest zbudowana na bazie komponentów. Każda sekcja strony (np. Home, Gallery, Projects) jest oddzielnym komponentem React, a te komponenty później są iportowane do App.js.
 
-React Create Context - pozwolił mi stworzyć drugi ciemny motyw graficzny strony błyskawicznie przełączany jednym kliknięciem w ikonkę księzyca w prawym dolnym roku aplikacji.
-
 useState i useEffect umożliwiają zarządzanie danymi i interakcjami użytkownika. Na przykład, komponent Packages przechowuje dane o dostępnych pakietach, które są dynamicznie wyświetlane na stronie i użytkownik może ich wczytać więcej lub mniej.
 
-W komponencie Questions zaimportowałam dane do FAQ z zewnętrznego API z https://jsonplaceholder.typicode.com/posts a także skorzystałam z React Paginate do podzielenia danych na strony.
+React Create Context - pozwolił mi stworzyć drugi ciemny motyw graficzny strony błyskawicznie przełączany jednym kliknięciem w ikonkę księzyca w prawym dolnym rogu aplikacji.
+
+W komponencie Questions zaimportowałam dane do FAQ z zewnętrznego API z https://jsonplaceholder.typicode.com/posts a także skorzystałam z React Paginate do podzielenia tych danych na strony.
 
 Skorzystałam również z wielu innych komponentów React takich jak:
 - React Scroll To Top oraz React Scroll - do przechodzenia między sekcjami bez przeładowywania strony
@@ -43,9 +43,9 @@ I worked on this SPA project for a very long time, taking many days off, but I h
 
 My application is built on a component basis. Each section of the page (e.g. Home, Gallery, Projects) is a separate React component, and these components are later imported into App.js.
 
-React Create Context - allowed me to create a second dark graphic theme for the website, quickly switchable with one click on the moon icon in the lower right corner of the application.
-
 useState and useEffect allow you to manage user data and interactions. For example, the Packages component stores data about available packages, which are dynamically displayed on the page and the user can load more or less of them.
+
+React Create Context - allowed me to create a second dark graphic theme for the website, quickly switchable with one click on the moon icon in the lower right corner of the application.
 
 In the Questions component, I imported data to the FAQ from an external API from https://jsonplaceholder.typicode.com/posts and also used React Paginate to divide the data into pages.
 
