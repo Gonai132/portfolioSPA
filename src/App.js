@@ -34,7 +34,7 @@ const toggleTheme = () =>{
       <Contact/>
       </div>
       <Footer/>
-      <ScrollToTop smooth height="20" width="20" color="#0082b6" style={{borderRadius: "5px", backgroundColor: "#caf0f8", lineHeight: "30px"}}/>
+      <ScrollToTop smooth height="20" width="20" color="#0082b6" style={{borderRadius: "5px", backgroundColor: "#caf0f8", lineHeight: "20px"}}/>
     </ThemeContext.Provider>
   );
 }
