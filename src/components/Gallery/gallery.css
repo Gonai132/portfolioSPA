@@ -1,8 +1,6 @@
 .gallery-section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-top: 30px;
     min-height: 700px;
-    margin-bottom: 25px;
 }
 
 .gallery-section span {

@@ -1,6 +1,7 @@
 .contact-section {
-   height: auto;
-   padding-bottom: 50px;
+    margin-top: 30px;
+    height: auto;
+    padding-bottom: 50px;
 }
 
 .center-contact {
@@ -18,6 +19,7 @@
     object-fit: contain;
     transition-duration: 0.3s;
     cursor: pointer;
+    padding: 8%;
 }
 
 .image-class img:hover {
@@ -27,13 +29,36 @@
 .contact-form-design {
     margin-top: 30px;
     padding: 20px;
+    position: relative;
     -moz-box-shadow: 9px 9px 9px -2px rgba(230, 224, 224, 0.8);
     -webkit-box-shadow: 9px 9px 9px -2px rgba(230, 224, 224, 0.8);
     box-shadow: 9px 9px 9px -2px rgba(230, 224, 224, 0.8);
     border-radius: 5px;
-    border: 1px solid rgba(173, 216, 230, 0.3);
+    border: 1px solid rgba(173, 216, 230, 1);
     transition-duration: 0.3s;
    
+}
+
+.contact-form-design:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to right, #caf0f8, #00b4d8, #caf0f8);
+    transform: scaleX(0);
+    transition: transform 400ms ease-in-out;
+    transform-origin: center;
+    border-radius: 0 0 5px 5px;
+}
+
+#dark .contact-form-design:after {
+    background: linear-gradient(to right, #015b6d, #00b4d8, #015b6d);
+} 
+
+.contact-form-design:hover:after {
+    transform: scaleX(1);
 }
 
 .contact-form-design h5 {
@@ -44,8 +69,7 @@
 .contact-form-design:hover {
     -moz-box-shadow: -9px 9px 5px -3px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: -9px 9px 5px -3px rgba(0, 0, 0, 0.3);
-    box-shadow: -9px 9px 5px -3px rgba(0, 0, 0, 0.3);
-   
+    box-shadow: -9px 9px 5px -3px rgba(0, 0, 0, 0.3);  
 }
 
 .contact-form input{
@@ -54,7 +78,7 @@
     margin-top: 0px;
     margin-bottom: 7px;
     width: 100%;
-    background-color:rgba(173, 216, 230, 0.1);
+    background-color:rgba(255, 255, 255, 1);
 }
 
 .contact-form textarea{
@@ -64,7 +88,7 @@
     margin-bottom: 7px;
     width: 100%;
     height: 100px;
-    background-color:rgba(173, 216, 230, 0.1);
+    background-color:rgba(255, 255, 255, 1);
 }
 
 .contact-form label {
@@ -82,7 +106,8 @@
     margin-top: 0px;
     margin-bottom: 10px;
     width: 100%;
-    background-color:rgba(173, 216, 230, 0.1);
+    color: #555;
+    background-color:rgba(255, 255, 255, 1);
 }
 
 #dark .contact-form-design {
@@ -90,6 +115,7 @@
     -webkit-box-shadow: 9px 9px 9px -2px rgba(18, 18, 18, 0.5);
     box-shadow: 9px 9px 9px -2px rgba(18, 18, 18, 0.5);
     transition-duration: 0.3s;
+    border: 1px solid rgba(173, 216, 230, 0.4);
 }
 
 #dark .contact-form-design:hover {
@@ -99,6 +125,12 @@
     transition-duration: 0.3s;
 }
 
+ .contact-form input, 
+ .contact-form textarea,  .contact-form select, .custom-select {
+    border: 1px solid rgba(173, 216, 230, 1);
+}
+
+
 #dark .contact-form input, 
 #dark .contact-form textarea, #dark .contact-form select, #dark .custom-select {
     color: aliceblue;
@@ -106,14 +138,9 @@
     background-color: #09587a;
 }
 
-
-@media (max-width: 767px) {
-  
-    .image-class img{
-        height: 300px;
-        width: 100%;
-    }
-  }
+#dark .custom-select {
+    color: #999;
+}
 
   select {
     color: inherit; 
@@ -130,21 +157,40 @@
     border-radius: 30px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    background-color: orange;
-    color: #09587a;
+    letter-spacing: 5px;
+    background-color: bisque;
+    color: #005379;
     margin-top: 10px;
     padding: 10px;
     width: 50%;
     height: 40px;
     line-height: 20px;
-    box-shadow: 3px 3px 3px -2px rgba(18, 18, 18, 0.3);
+    box-shadow: 3px 3px 3px -2px rgba(18, 18, 18, 0.3), inset 0 -1px 0 rgba(255,255,255,0.15);
     transition-duration: 0.3s;
     cursor: pointer;
   }
 
-  .button-form:hover {
-    background-color: #00b4d8;
-
+  #dark .button-form {
+    background-color: orange;
   }
+
+ .button-form:hover {
+    color:#007cb6;
+    background-color: #caf0f8;
+  }
+
+  #dark .button-form:hover {
+    transition-duration: 0.3s;
+    background-color: #00b4d8;
+    color:#004579;
+  }
+
+  @media (max-width: 767px) {
+  
+    .image-class img{
+        height: 300px;
+        width: 100%;
+    }
+  }
+
 

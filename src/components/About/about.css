@@ -1,6 +1,6 @@
 .about-section {
+    padding-top: 30px;
     min-height: 550px;
-    padding-bottom: 30px;
 }
 
 #dark .about-section {
@@ -48,7 +48,7 @@
 }
 
 .about-title {
-    padding-top: 60px;
+    padding-top: 10px;
     text-align: center;
 }
 
