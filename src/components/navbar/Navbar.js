@@ -27,7 +27,7 @@ return(
             <li className="nav-item"><Link to="about" spy={true} smooth={true} offset={-5} duration={100} activeClass="active-nav">O mnie</Link></li>
             <li className="nav-item"> <Link to="gallery" spy={true} smooth={true} offset={-5} duration={100} activeClass="active-nav">Galeria</Link></li>
             <li className="nav-item"> <Link to="questions" spy={true} smooth={true} offset={1} duration={100} activeClass="active-nav">Pytania</Link></li>
-            <li className="nav-item"> <Link to="packages" spy={true} smooth={true} offset={1} duration={50} activeClass="active-nav">Pakiety</Link></li>
+            <li className="nav-item"> <Link to="packages" spy={true} smooth={true} offset={3} duration={50} activeClass="active-nav">Pakiety</Link></li>
             <li className="nav-item"> <Link to="contact" spy={true} smooth={true} offset={1} duration={100} activeClass="active-nav">Kontakt</Link></li>
   </ul>
     </nav>

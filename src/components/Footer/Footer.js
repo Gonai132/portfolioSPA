@@ -2,6 +2,7 @@ import React from 'react'
 import "./footer.css"
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaRegCopyright } from "react-icons/fa";
 import Zoom from "react-reveal/Zoom";
+import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
@@ -9,10 +10,10 @@ const Footer = () => {
          <Zoom>
         <div className='container'>
             <div className='row'>
-                <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
+                <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12'>
                     <div className='footer-about'>
                         <h6>O mnie</h6>
-                        <p>Portal Front-End Developera - Margaret, wraz z informacjami o zrealizowanych projektach, oferowanych usługach, z opiniami klientów i możliwością bezpośredniego kontaktu.</p>
+                        <p>Portal Front-End Developera - Margaret, wraz z informacjami o dotychczasowym doświadczeniu, zrealizowanych projektach i oferowanych usługach, a także z możliwością bezpośredniego kontaktu.</p>
                         <span className='social-icon'>
                             <a href='facebook.com'><FaFacebook size={25} /></a>
                             <a href='instagram.com'><FaInstagram size={25} /></a>
@@ -21,13 +22,23 @@ const Footer = () => {
                         </span>
                     </div>
                 </div>
-                <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
+                <div className='col-xl-2 col-lg-3 col-md-3 col-sm-12 col-12'>
+                    <div className='footer-list'>
+                    <h6>Więcej</h6>
+                        <ul>
+                             <Link to="home" spy={true} smooth={true} offset={-50} duration={100} ><li>Strona główna</li></Link>
+                             <Link to="about" spy={true} smooth={true} offset={5} duration={100} ><li>O mnie</li></Link>
+                             <Link to="gallery" spy={true} smooth={true} offset={-5} duration={100} ><li>Galeria</li></Link>
+                        </ul>
+                    </div>
+                </div>
+                <div className='col-xl-2 col-lg-3 col-md-3 col-sm-12 col-12'>
                     <div className='footer-list'>
                     <h6>Przydatne linki</h6>
                         <ul>
-                            <li>Pakiety</li>
-                            <li>Kontakt</li>
-                            <li>FAQ</li>
+                             <Link to="packages" spy={true} smooth={true} offset={3} duration={100} ><li>Pakiety</li></Link>
+                             <Link to="contact" spy={true} smooth={true} offset={1} duration={100} ><li>Kontakt</li></Link>
+                             <Link to="questions" spy={true} smooth={true} offset={1} duration={100} ><li>FAQ</li></Link>
                         </ul>
                     </div>
                 </div>

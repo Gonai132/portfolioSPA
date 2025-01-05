@@ -10,14 +10,14 @@ const About = () => {
     <div className='container about-section' id='about'>
         <div className='row'>
             <Fade left>
-            <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12'>
+            <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
                 <div className='about-image'>
                     <img src={girl} height="400px" width="400px" alt='about_image'/>
                 </div>
             </div>
             </Fade>
             <Fade right>
-            <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12'>
+            <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
                 <div className='about-details'>
                     <div className='section-title'>
                         <h2>Kim jestem?</h2>

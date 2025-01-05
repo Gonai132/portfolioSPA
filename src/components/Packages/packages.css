@@ -113,7 +113,7 @@
     justify-content: center;
     justify-self: center;
     display: table;
-    margin: 50px auto;
+    margin: 30px auto;
     transition: 0.3s;
 }
 
@@ -158,3 +158,12 @@
     background-color: rgba(255, 166, 0, 0.8);
     color: #333;
 }
+
+
+@media (max-width: 767px) {
+
+    .packages-section {
+        margin-top: 25px;
+    }    
+ }
+

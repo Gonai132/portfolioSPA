@@ -45,6 +45,10 @@
   
   .gallery-section {overflow: hidden;}
 
+  .section-title h2 {
+    padding-top: 30px;
+  }
+
 
   .scroll-to-top {
     text-align: center!important;

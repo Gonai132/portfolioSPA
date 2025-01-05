@@ -186,11 +186,11 @@
   }
 
   @media (max-width: 767px) {
-  
     .image-class img{
         height: 300px;
         width: 100%;
     }
+    .contact-section { 
+        margin-top: 25px;
+    }
   }
-
-

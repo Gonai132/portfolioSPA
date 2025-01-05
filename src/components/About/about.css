@@ -8,10 +8,11 @@
 }
 
 .about-image {
-    min-height: 600px;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;  
+    order: 1;
 }
 
 .about-image img {
@@ -29,6 +30,8 @@
 .about-details {
     text-align: left;
     padding: 20px;
+    order: 2;
+    margin-bottom: 50px;
 }
 
 .line {
@@ -101,3 +104,22 @@
     padding-right: 10px;
     padding-top: 10px;
 }
+
+@media (max-width: 767px) {
+
+    .about-section {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 25px;
+       
+    }
+
+ }
+
+@media (max-width: 991px) {
+
+    .about-section .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+ }

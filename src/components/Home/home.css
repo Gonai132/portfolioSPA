@@ -128,6 +128,14 @@ h1.home-title {
         color: #333;
     }
 
+    h1.home-title {
+        margin-bottom: 50px;
+    }
+
+    .home p {
+        margin-bottom: 50px;
+    }
+
     .theme-change {
         top: 7px;
         background-color: #ffffff00;

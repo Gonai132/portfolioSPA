@@ -1,78 +1,150 @@
- .footer {
-    height: auto;
-    margin: 0;
-    background-color: #303841;
+.footer {
+   height: auto;
+   margin: 0;
+   background-color: #303841;
  }
 
- .footer-list {
-    margin-left: 50px;
- }
- .footer-about {
-    margin-right: 50px;
+.footer-list {
+   margin-left: 50px;
  }
 
- .footer-about p {
+.footer-about {
+   margin-right: 50px;
+ }
+
+.footer-about p {
    padding-left: 20%;
-    margin-top: 10px;
-    color: aliceblue;
-    text-align: right;
-    font-size: small;
- }
- .footer-list li { 
-  list-style: none;
-    margin-top: 10px;
-    color: aliceblue;
-    text-align: left;
-    font-size: small;
-    --border-color: white;
-    --border-color2: bisque;
-    --border-width: 1.5px;
-    --bottom-distance: 0px;
-    display: block;
-    background-image: linear-gradient(var(--border-color), var(--border-color2));
-    background-size: 0% var(--border-width);
-    background-repeat: no-repeat;
-    transition: background-size 0.3s;
-    background-position: 0 calc(100% - var(--bottom-distance));
-    width: fit-content;
+   margin-top: 10px;
+   color: aliceblue;
+   text-align: right;
+   font-size: small;
  }
 
- .footer-list li:hover {
+.footer-list li { 
+   list-style: none;
+   margin-top: 10px;
+   margin-left: -30px;
+   color: aliceblue;
+   text-align: left;
+   font-size: small;
+   --border-color: white;
+   --border-color2: bisque;
+   --border-width: 1.5px;
+   --bottom-distance: 0px;
+   display: block;
+   background-image: linear-gradient(var(--border-color), var(--border-color2));
+   background-size: 0% var(--border-width);
+   background-repeat: no-repeat;
+   transition: background-size 0.3s;
+   background-position: 0 calc(100% - var(--bottom-distance));
+   width: fit-content;
+ }
+ 
+
+.footer-list li:hover {
    background-size: 100% var(--border-width);
    cursor: pointer;
  }
 
 
- .footer-about h6 {
-    margin-top: 30px;
-    color: bisque;
-    text-align: right;
-    font-size: small;
+.footer-about h6 {
+   margin-top: 30px;
+   color: bisque;
+   text-align: right;
+   font-size: small;
  }
 
 .footer-list h6 {
-    margin-top: 30px;
-    color: bisque;
-    text-align: left;
-    font-size: small;
+   margin-top: 30px;
+   color: bisque;
+   text-align: left;
+   font-size: small;
  }
 
 
- .social-icon {
-    display: flex;
-    flex-direction: row-reverse;
+.social-icon {
+   display: flex;
+   flex-direction: row-reverse;
  }
 
- .footer-about a {
-    text-align: right;
-    flex-basis: 15%;
-    display: inline-block;
-    color: bisque;
+.footer-about a {
+   text-align: right;
+   flex-basis: 15%;
+   display: inline-block;
+   color: bisque;
  }
 
- .foot {
+.foot {
    padding-top: 30px;
    color: bisque;
    font-size: 10px;
    text-align: center;
+ }
+
+ a.active {
+   text-decoration: none;
+   color: inherit;
+ }
+
+ @media (max-width: 767px) {
+
+.footer-about {
+   margin-right: 0px;
+   }
+
+.footer-about p {
+   text-align: left;
+   padding-left: 25px;
+   margin-right: 25px;
+   }
+
+.footer-about h6 {
+   text-align: center;
+   margin-left: 0px;
+   }
+
+.social-icon {
+   display: flex;
+   flex-direction: row;
+   margin-left: 25px;
+   margin-right: 25px;
+   justify-content: space-between;
+   }
+
+.footer-about a {
+   text-align: center;
+   flex-basis: 25%;
+   }
+
+.footer-list {
+   margin-left: 25px;
+   margin-right: 25px;
+   text-align: center;
+}
+
+.footer-list h6 {
+   margin-left: 0px;
+   padding-left: 0px;
+   text-align: center;
+}
+
+.footer-list li {
+   margin-left: -20px;
+   display: block;
+   width: 100%;
+   padding-left: 0px;
+   text-align: center;
+}
+
+.footer-list li { 
+   background-position: center bottom;
+ }
+ 
+
+.footer-list li:hover {
+   background-size: 20% var(--border-width);
+   background-position: center bottom;
+   cursor: pointer;
+ }
+
  }
