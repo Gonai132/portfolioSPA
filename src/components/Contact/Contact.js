@@ -70,15 +70,15 @@ const Contact = () => {
                 <form>
                     <div className='contact-form'>
                         <label className='form-label'>Imię: </label>
-                        <input type='text' placeholder='Twoje imię' value={name} onChange={(e)=>setName(e.target.value)}></input>
+                        <input type='text' placeholder='Twoje imię' value={name} onChange={(e)=>setName(e.target.value)} required></input>
                     </div>
                     <div className='contact-form'>
                         <label className='form-label'>E-mail: </label>
-                        <input type='text' placeholder='Twój e-mail' value={email} onChange={(e)=>setEmail(e.target.value)}></input>
+                        <input type='text' placeholder='Twój e-mail' value={email} onChange={(e)=>setEmail(e.target.value)}  required></input>
                     </div>
                     <div className='contact-form'>
                         <label className='form-label'>Usługa: </label>
-                        <select className='custom-select' value={servicetype} onChange={(e)=>setServiceType(e.target.value)}>
+                        <select className='custom-select' value={servicetype} onChange={(e)=>setServiceType(e.target.value)} required>
                             <option>Zapytanie o projekt</option>
                             <option>Istniejące projekty</option>
                             <option>Współpraca</option>
@@ -87,9 +87,8 @@ const Contact = () => {
                     </div>
                     <div className='contact-form'>
                         <label className='form-label'>Wiadomość: </label>
-                        <textarea type='text' placeholder='Twoja wiadomość' rows={4} value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
+                        <textarea type='text' placeholder='Twoja wiadomość' rows={4} value={message} onChange={(e)=>setMessage(e.target.value)} required></textarea>
                     </div>
-                   
                </form>
                <div className='button-form' onClick={sendEmailInfo}><p>Wyślij</p></div>
                </div>
